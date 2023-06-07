@@ -1,0 +1,358 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "cc0f201e",
+   "metadata": {},
+   "source": [
+    "# Question-1\n",
+    "What data type is each of the following (evaluate where necessary)? \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "3540b378",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "5  # Integer\n",
+    "5.0  # Float\n",
+    "5 > 1  #Boolean\n",
+    "'5'  #String\n",
+    "5 * 2  #integer"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "5f701dbd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'55'"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'5' * 2  # String"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "3e3e64e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'52'"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'5' + '2'  # String"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8436030a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "5 / 2  #Integer \n",
+    "5 % 2  #Integer\n",
+    "{5, 2, 1} # Set\n",
+    "5 == 3  # Boolean\n",
+    "Pi (the number) # Float"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "57593031",
+   "metadata": {},
+   "source": [
+    "# Question-2\n",
+    "Write (and evaluate) python expressions that answer these questions:\n",
+    "\n",
+    "a. How many letters are there in 'Supercalifragilisticexpialidocious'? \n",
+    "\n",
+    "b. Does 'Supercalifragilisticexpialidocious' contain 'ice' as a substring?\n",
+    "\n",
+    "c. Which of the following words is the longest: Supercalifragilisticexpialidocious, Honorificabilitudinitatibus,  or Bababadalgharaghtakamminarronnkonn?  \n",
+    "\n",
+    "d. Which composer comes first in the dictionary: 'Berlioz', 'Borodin', 'Brian', 'Bartok', 'Bellini', 'Buxtehude', 'Bernstein'. Which one comes last?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "0b50db45",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "34\n"
+     ]
+    }
+   ],
+   "source": [
+    "#a How many letters are there in 'Supercalifragilisticexpialidocious'?\n",
+    "\n",
+    "a= 'Supercalifragilisticexpialidocious'\n",
+    "print(len(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "7f46c46c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Is a Substring\n"
+     ]
+    }
+   ],
+   "source": [
+    "# b. Does 'Supercalifragilisticexpialidocious' contain 'ice' as a substring?\n",
+    "\n",
+    "b= 'Supercalifragilisticexpialidocious'\n",
+    "to_check= 'ice'\n",
+    "\n",
+    "if to_check in b:\n",
+    "    print('Is a Substring')\n",
+    "\n",
+    "else:\n",
+    "    print('Not a Substring')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "3621148b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Longest String is Supercalifragilisticexpialidocious\n"
+     ]
+    }
+   ],
+   "source": [
+    "# c. Which of the following words is the longest: Supercalifragilisticexpialidocious, Honorificabilitudinitatibus, \n",
+    "#    or Bababadalgharaghtakamminarronnkonn?\n",
+    "\n",
+    "a='Supercalifragilisticexpialidocious'\n",
+    "b='Honorificabilitudinitatibus'\n",
+    "c='Honorificabilitudinitatibus'\n",
+    "\n",
+    "if len(a)> len(b):\n",
+    "    if len(a) >len(c):\n",
+    "        print('Longest String is',a)\n",
+    "\n",
+    "elif len(b)> len(c):\n",
+    "    if len(b)>len(a):\n",
+    "        print('Longest String is',b)\n",
+    "\n",
+    "else:\n",
+    "    print('Longest String is',c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "c0fa6de0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original Dictionary Items-  ['Berlioz', 'Borodin', 'Brian', 'Bartok', 'Bellini', 'Buxtehude', 'Bernstein']\n",
+      "Sorted Dictionary Items-  ['Bartok', 'Bellini', 'Berlioz', 'Bernstein', 'Borodin', 'Brian', 'Buxtehude']\n",
+      "Bartok  is first in the dictionary\n",
+      "Buxtehude  is last in the dictionary\n"
+     ]
+    }
+   ],
+   "source": [
+    "# d. Which composer comes first in the \n",
+    "#    dictionary: 'Berlioz', 'Borodin', 'Brian', 'Bartok', 'Bellini', 'Buxtehude', 'Bernstein'. \n",
+    "#    Which one comes last?\n",
+    "\n",
+    "composer_dict= ['Berlioz', 'Borodin', 'Brian', 'Bartok', 'Bellini', 'Buxtehude', 'Bernstein']\n",
+    "sorted_composer_dict= sorted(composer_dict)\n",
+    "print('Original Dictionary Items- ',composer_dict)\n",
+    "print('Sorted Dictionary Items- ',sorted_composer_dict)\n",
+    "print(sorted_composer_dict[0],' is first in the dictionary')\n",
+    "print(sorted_composer_dict[len(sorted_composer_dict)-1],' is last in the dictionary')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9f83faff",
+   "metadata": {},
+   "source": [
+    "# Question-3\n",
+    "Implement function triangleArea(a,b,c) that takes as input the lengths of the 3 sides of a triangle and returns the area of the triangle. By Heron's formula, the area of a triangle with side lengths a, b, and c is   s(s-a)(s-b)(s-c), where   s=(a+b+c)/2. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "ff6e50f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the lenght of edges of a triangle\n",
+      "2\n",
+      "2\n",
+      "2\n",
+      "Area of the Triangle with edges 2 , 2 , 2 is 1.7320508075688772\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math\n",
+    "def triangleArea(s1,s2,s3):\n",
+    "     avg = (s1 + s2 + s3) / 2\n",
+    "     ar = math.sqrt(avg * (avg - s1) * (avg - s2) * (avg - s3))\n",
+    "     return ar\n",
+    "\n",
+    "print('Enter the lenght of edges of a triangle')\n",
+    "s1=int(input())\n",
+    "s2=int(input())\n",
+    "s3=int(input())\n",
+    "\n",
+    "#triangle_area = triangleArea(s1,s2,s3)\n",
+    "#print(triangle_area)\n",
+    "\n",
+    "print(f'Area of the Triangle with edges {s1} , {s2} , {s3} is {triangleArea(s1,s2,s3)}') "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c2ca5854",
+   "metadata": {},
+   "source": [
+    "# Question-4\n",
+    "\n",
+    "Write a program in python to separate odd and even integers in separate arrays. Go to the editor\n",
+    "\n",
+    "Test Data : \n",
+    "\n",
+    "Input the number of elements to be stored in the array :5 \n",
+    "\n",
+    "Input 5 elements in the array : \n",
+    "\n",
+    "element - 0 : 25 \n",
+    "\n",
+    "element - 1 : 47 \n",
+    "\n",
+    "element - 2 : 42 \n",
+    "\n",
+    "element - 3 : 56 \n",
+    "\n",
+    "element - 4 : 32 \n",
+    "\n",
+    "Expected Output: \n",
+    "\n",
+    "The Even elements are: \n",
+    "\n",
+    "42 56 32 \n",
+    "\n",
+    "The Odd elements are : \n",
+    "\n",
+    "25 47"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0aa21f7c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "num= input('Input the number of elements to be stored in the array :')\n",
+    "print(f'Input {num} elements in the array')\n",
+    "i=0\n",
+    "arr=[]\n",
+    "for i in range(num):\n",
+    "    k=input()\n",
+    "    arr.append(k)\n",
+    "print(arr)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "12eb4da5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "25d3a688",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
